@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Your SaaS Product</title>
     <link rel="stylesheet" href="styles.css">
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&family=Raleway:wght@300;400;600&display=swap" rel="stylesheet">
 </head>
 <body>
     <header>
@@ -24,9 +24,14 @@
 
     <section class="hero">
         <div class="container">
-            <h1>Unlock the Potential of Your Business</h1>
-            <p>Our SaaS solution provides seamless integration, robust security, and exceptional support to scale your business effortlessly.</p>
-            <a href="#cta" class="btn-primary">Start Your Free Trial</a>
+            <div class="hero-text">
+                <h1>Transform Your Business with Our SaaS Solution</h1>
+                <p>Discover how our platform can streamline your operations, enhance customer satisfaction, and drive growth.</p>
+                <a href="#cta" class="btn-primary">Start Your Free Trial</a>
+            </div>
+            <div class="hero-image">
+                <img src="hero-image.png" alt="Hero Image">
+            </div>
         </div>
         <div class="hero-overlay"></div>
     </section>
@@ -36,19 +41,57 @@
             <h2>Features</h2>
             <div class="features-grid">
                 <div class="feature">
-                    <i class="icon-feature1"></i>
+                    <div class="icon-feature icon-feature1"></div>
                     <h3>Advanced Analytics</h3>
-                    <p>Gain deep insights with our powerful analytics tools.</p>
+                    <p>Gain actionable insights with our comprehensive analytics tools.</p>
                 </div>
                 <div class="feature">
-                    <i class="icon-feature2"></i>
+                    <div class="icon-feature icon-feature2"></div>
                     <h3>Seamless Integration</h3>
-                    <p>Integrate with your existing tools effortlessly.</p>
+                    <p>Easily integrate with your existing tools and platforms.</p>
                 </div>
                 <div class="feature">
-                    <i class="icon-feature3"></i>
+                    <div class="icon-feature icon-feature3"></div>
                     <h3>Customizable Dashboards</h3>
-                    <p>Tailor your dashboards to meet your business needs.</p>
+                    <p>Design dashboards that fit your unique business needs.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="pricing" class="pricing">
+        <div class="container">
+            <h2>Pricing Plans</h2>
+            <div class="pricing-cards">
+                <div class="pricing-card">
+                    <h3>Basic</h3>
+                    <p class="price">$9/month</p>
+                    <ul>
+                        <li>Essential Features</li>
+                        <li>Email Support</li>
+                        <li>Access to Community</li>
+                    </ul>
+                    <a href="#cta" class="btn-secondary">Get Started</a>
+                </div>
+                <div class="pricing-card">
+                    <h3>Pro</h3>
+                    <p class="price">$29/month</p>
+                    <ul>
+                        <li>Advanced Features</li>
+                        <li>Priority Support</li>
+                        <li>Custom Reports</li>
+                    </ul>
+                    <a href="#cta" class="btn-secondary">Get Started</a>
+                </div>
+                <div class="pricing-card">
+                    <h3>Enterprise</h3>
+                    <p class="price">Contact Us</p>
+                    <ul>
+                        <li>All Features</li>
+                        <li>Dedicated Support</li>
+                        <li>Custom Solutions</li>
+                    </ul>
+                    <a href="#cta" class="btn-secondary">Contact Us</a>
                 </div>
             </div>
         </div>
@@ -56,9 +99,9 @@
 
     <section id="cta" class="cta">
         <div class="container">
-            <h2>Start Your Free Trial Now</h2>
-            <p>Experience all the features with no commitment. Start transforming your business today!</p>
-            <a href="#contact" class="btn-secondary">Sign Up for Free</a>
+            <h2>Start Your Free Trial Today</h2>
+            <p>Experience all our features with no commitment. Transform your business with our state-of-the-art SaaS platform.</p>
+            <a href="#contact" class="btn-primary">Sign Up for Free</a>
         </div>
     </section>
 
@@ -82,12 +125,14 @@
 
     <footer>
         <div class="container">
-            <p>&copy; 2024 YourSaaS. All rights reserved.</p>
-            <ul class="social-links">
-                <li><a href="#"><i class="icon-twitter"></i></a></li>
-                <li><a href="#"><i class="icon-facebook"></i></a></li>
-                <li><a href="#"><i class="icon-linkedin"></i></a></li>
-            </ul>
+            <div class="footer-content">
+                <p>&copy; 2024 YourSaaS. All rights reserved.</p>
+                <ul class="social-links">
+                    <li><a href="#"><i class="icon-twitter"></i></a></li>
+                    <li><a href="#"><i class="icon-facebook"></i></a></li>
+                    <li><a href="#"><i class="icon-linkedin"></i></a></li>
+                </ul>
+            </div>
         </div>
     </footer>
 
