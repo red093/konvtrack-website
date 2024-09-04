@@ -1,10 +1,9 @@
-/* Global Styles (no change) */
+/* Global Styles */
 body {
     font-family: 'Montserrat', sans-serif;
-    color: #1d1d1d;
+    color: #333;
     margin: 0;
     padding: 0;
-    line-height: 1.6;
     background-color: #f4f7fa;
     overflow-x: hidden;
 }
@@ -26,9 +25,10 @@ header {
 }
 
 header .logo {
-    font-size: 1.8em;
+    font-size: 2em;
     font-weight: 700;
     color: #3b82f6;
+    text-transform: uppercase;
 }
 
 header nav ul {
@@ -66,98 +66,292 @@ header nav ul li .cta-button:hover {
     background: #2563eb;
 }
 
+/* Hero Section */
+.hero {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 100px 0 60px 0;
+    background: #f0f8ff;
+}
+
+.hero-text {
+    max-width: 50%;
+}
+
+.hero-text h1 {
+    font-size: 3em;
+    color: #1e40af;
+}
+
+.hero-text p {
+    font-size: 1.2em;
+    margin: 20px 0;
+    color: #333;
+}
+
+.hero-text .btn-primary {
+    display: inline-block;
+    background: #3b82f6;
+    color: white;
+    padding: 15px 30px;
+    border-radius: 30px;
+    text-decoration: none;
+    font-weight: 600;
+    margin-top: 20px;
+    transition: background 0.3s ease;
+}
+
+.hero-text .btn-primary:hover {
+    background: #2563eb;
+}
+
+.hero-image img {
+    max-width: 100%;
+    border-radius: 20px;
+}
+
+/* Features Section */
+.features {
+    padding: 60px 0;
+    background: #ffffff;
+}
+
+.features h2 {
+    font-size: 2.5em;
+    text-align: center;
+    color: #1e40af;
+    margin-bottom: 40px;
+}
+
+.features-grid {
+    display: flex;
+    justify-content: space-between;
+    gap: 30px;
+    flex-wrap: wrap;
+}
+
+.feature {
+    background: #f4f7fa;
+    padding: 30px;
+    border-radius: 15px;
+    text-align: center;
+    width: 100%;
+    max-width: 30%;
+    flex-grow: 1;
+}
+
+.feature img {
+    max-width: 100%;
+    height: auto;
+    margin-bottom: 20px;
+}
+
+.feature h3 {
+    font-size: 1.5em;
+    color: #3b82f6;
+    margin-bottom: 15px;
+}
+
+.feature p {
+    color: #333;
+}
+
+/* Pricing Section */
+.pricing {
+    padding: 60px 0;
+    background: #f0f8ff;
+}
+
+.pricing h2 {
+    font-size: 2.5em;
+    text-align: center;
+    color: #1e40af;
+    margin-bottom: 40px;
+}
+
+.pricing-cards {
+    display: flex;
+    justify-content: space-between;
+    gap: 30px;
+    flex-wrap: wrap;
+}
+
+.pricing-card {
+    background: #ffffff;
+    padding: 30px;
+    border-radius: 15px;
+    text-align: center;
+    width: 100%;
+    max-width: 30%;
+    flex-grow: 1;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.pricing-card h3 {
+    font-size: 1.8em;
+    color: #3b82f6;
+    margin-bottom: 15px;
+}
+
+.pricing-card .price {
+    font-size: 2.5em;
+    color: #1e40af;
+    margin-bottom: 20px;
+}
+
+.pricing-card ul {
+    list-style: none;
+    padding: 0;
+    margin-bottom: 20px;
+}
+
+.pricing-card ul li {
+    margin-bottom: 10px;
+    color: #333;
+}
+
+.pricing-card .btn-secondary {
+    background: #3b82f6;
+    color: white;
+    padding: 15px 30px;
+    border-radius: 30px;
+    text-decoration: none;
+    font-weight: 600;
+    transition: background 0.3s ease;
+}
+
+.pricing-card .btn-secondary:hover {
+    background: #2563eb;
+}
+
+/* CTA Section */
+.cta {
+    padding: 60px 0;
+    background: #3b82f6;
+    color: white;
+    text-align: center;
+}
+
+.cta h2 {
+    font-size: 2.5em;
+    margin-bottom: 20px;
+}
+
+.cta p {
+    font-size: 1.2em;
+    margin-bottom: 30px;
+}
+
+.cta .btn-primary {
+    background: white;
+    color: #3b82f6;
+    padding: 15px 30px;
+    border-radius: 30px;
+    text-decoration: none;
+    font-weight: 600;
+    transition: background 0.3s ease, color 0.3s ease;
+}
+
+.cta .btn-primary:hover {
+    background: #2563eb;
+    color: white;
+}
+
+/* Contact Section */
+.contact {
+    padding: 60px 0;
+    background: #ffffff;
+}
+
+.contact h2 {
+    font-size: 2.5em;
+    text-align: center;
+    color: #1e40af;
+    margin-bottom: 40px;
+}
+
+.contact form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.contact .form-group {
+    width: 100%;
+    max-width: 500px;
+    margin-bottom: 20px;
+}
+
+.contact input, .contact textarea {
+    width: 100%;
+    padding: 15px;
+    border-radius: 10px;
+    border: 1px solid #ccc;
+    font-size: 1em;
+}
+
+.contact button {
+    background: #3b82f6;
+    color: white;
+    padding: 15px 30px;
+    border-radius: 30px;
+    font-size: 1.2em;
+    font-weight: 600;
+    cursor: pointer;
+    transition: background 0.3s ease;
+}
+
+.contact button:hover {
+    background: #2563eb;
+}
+
+/* Footer */
+footer {
+    background: #1e40af;
+    color: white;
+    padding: 20px 0;
+    text-align: center;
+}
+
+footer p {
+    margin: 0;
+}
+
+footer .social-links {
+    list-style: none;
+    padding: 0;
+    margin: 10px 0 0 0;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+footer .social-links li {
+    display: inline;
+}
+
+footer .social-links li a {
+    color: white;
+    text-decoration: none;
+    font-size: 1.2em;
+}
+
 /* Responsive Design: Media Queries */
 @media (max-width: 768px) {
-    header .container {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-    }
-
-    header nav ul {
-        flex-direction: column;
-        margin-top: 10px;
-    }
-
-    header nav ul li {
-        margin: 10px 0;
-    }
-
     .hero {
         flex-direction: column;
-        text-align: center;
-        padding-top: 80px; /* to accommodate fixed header */
+        padding-top: 120px;
     }
 
     .hero-text {
         max-width: 100%;
+        text-align: center;
         margin-bottom: 30px;
     }
 
-    .hero h1 {
-        font-size: 2.5em;
-    }
-
-    .hero p {
-        font-size: 1.2em;
-    }
-
-    .hero-image img {
-        width: 100%;
-    }
-
-    .features-grid {
+    .features-grid, .pricing-cards {
         flex-direction: column;
         gap: 20px;
     }
-
-    .pricing-cards {
-        flex-direction: column;
-        gap: 20px;
-    }
-
-    .contact form {
-        width: 100%;
-        padding: 0 20px;
-    }
-}
-
-@media (max-width: 480px) {
-    .hero h1 {
-        font-size: 2em;
-    }
-
-    .hero p {
-        font-size: 1.1em;
-    }
-
-    header .logo {
-        font-size: 1.5em;
-    }
-
-    .features h2, .pricing h2, .contact h2 {
-        font-size: 2em;
-    }
-}
-
-/* Stock Images */
-.hero-image img {
-    width: 100%;
-    border-radius: 20px;
-}
-
-.features .icon-feature {
-    background: url('icon-feature1.png') no-repeat center center / contain;
-}
-
-.icon-feature1 {
-    background-image: url('analytics-stock.jpg');
-}
-
-.icon-feature2 {
-    background-image: url('integration-stock.jpg');
-}
-
-.icon-feature3 {
-    background-image: url('dashboard-stock.jpg');
 }
