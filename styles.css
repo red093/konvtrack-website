@@ -1,10 +1,10 @@
 /* Global Styles */
 body {
-    font-family: 'Montserrat', sans-serif;
+    font-family: 'Poppins', sans-serif; 
     color: #333;
     margin: 0;
     padding: 0;
-    background-color: #f4f7fa;
+    background-color: #f4f4f4; 
     overflow-x: hidden;
 }
 
@@ -17,7 +17,7 @@ body {
 header {
     background: #ffffff;
     padding: 20px 0;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
     position: fixed;
     width: 100%;
     z-index: 1000;
@@ -27,7 +27,7 @@ header {
 header .logo {
     font-size: 2em;
     font-weight: 700;
-    color: #3b82f6;
+    color: #4285f4;
     text-transform: uppercase;
 }
 
@@ -46,24 +46,24 @@ header nav ul li {
 header nav ul li a {
     text-decoration: none;
     color: #333;
-    font-weight: 600;
+    font-weight: 500; 
     transition: color 0.3s ease;
 }
 
 header nav ul li a:hover {
-    color: #3b82f6;
+    color: #4285f4;
 }
 
 header nav ul li .cta-button {
-    background: #3b82f6;
+    background: #4285f4;
     color: #fff;
     padding: 10px 20px;
-    border-radius: 30px;
+    border-radius: 20px;
     transition: background 0.3s ease;
 }
 
 header nav ul li .cta-button:hover {
-    background: #2563eb;
+    background: #3367d6;
 }
 
 /* Hero Section */
@@ -71,8 +71,8 @@ header nav ul li .cta-button:hover {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 100px 0 60px 0;
-    background: #f0f8ff;
+    padding: 100px 0;
+    background: linear-gradient(to right, #f0f8ff, #e0f2fe);
 }
 
 .hero-text {
@@ -81,34 +81,37 @@ header nav ul li .cta-button:hover {
 
 .hero-text h1 {
     font-size: 3em;
-    color: #1e40af;
+    color: #212121; 
+    font-weight: 700;
 }
 
 .hero-text p {
     font-size: 1.2em;
     margin: 20px 0;
-    color: #333;
+    color: #444; 
 }
 
 .hero-text .btn-primary {
     display: inline-block;
-    background: #3b82f6;
+    background: #4285f4;
     color: white;
     padding: 15px 30px;
-    border-radius: 30px;
+    border-radius: 20px;
     text-decoration: none;
     font-weight: 600;
     margin-top: 20px;
     transition: background 0.3s ease;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
 
 .hero-text .btn-primary:hover {
-    background: #2563eb;
+    background: #3367d6;
 }
 
 .hero-image img {
     max-width: 100%;
-    border-radius: 20px;
+    border-radius: 10px; 
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); 
 }
 
 /* Features Section */
@@ -120,8 +123,9 @@ header nav ul li .cta-button:hover {
 .features h2 {
     font-size: 2.5em;
     text-align: center;
-    color: #1e40af;
+    color: #212121;
     margin-bottom: 40px;
+    font-weight: 600;
 }
 
 .features-grid {
@@ -132,13 +136,14 @@ header nav ul li .cta-button:hover {
 }
 
 .feature {
-    background: #f4f7fa;
+    background: #f9f9f9;
     padding: 30px;
-    border-radius: 15px;
+    border-radius: 10px;
     text-align: center;
     width: 100%;
     max-width: 30%;
     flex-grow: 1;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
 
 .feature img {
@@ -149,7 +154,7 @@ header nav ul li .cta-button:hover {
 
 .feature h3 {
     font-size: 1.5em;
-    color: #3b82f6;
+    color: #4285f4;
     margin-bottom: 15px;
 }
 
@@ -160,14 +165,15 @@ header nav ul li .cta-button:hover {
 /* Pricing Section */
 .pricing {
     padding: 60px 0;
-    background: #f0f8ff;
+    background: linear-gradient(to right, #e0f2fe, #f0f8ff);
 }
 
 .pricing h2 {
     font-size: 2.5em;
     text-align: center;
-    color: #1e40af;
+    color: #212121;
     margin-bottom: 40px;
+    font-weight: 600;
 }
 
 .pricing-cards {
@@ -180,7 +186,7 @@ header nav ul li .cta-button:hover {
 .pricing-card {
     background: #ffffff;
     padding: 30px;
-    border-radius: 15px;
+    border-radius: 10px;
     text-align: center;
     width: 100%;
     max-width: 30%;
@@ -190,14 +196,15 @@ header nav ul li .cta-button:hover {
 
 .pricing-card h3 {
     font-size: 1.8em;
-    color: #3b82f6;
+    color: #4285f4;
     margin-bottom: 15px;
 }
 
 .pricing-card .price {
     font-size: 2.5em;
-    color: #1e40af;
+    color: #212121;
     margin-bottom: 20px;
+    font-weight: 700;
 }
 
 .pricing-card ul {
@@ -212,23 +219,24 @@ header nav ul li .cta-button:hover {
 }
 
 .pricing-card .btn-secondary {
-    background: #3b82f6;
+    background: #4285f4;
     color: white;
     padding: 15px 30px;
-    border-radius: 30px;
+    border-radius: 20px;
     text-decoration: none;
     font-weight: 600;
     transition: background 0.3s ease;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
 
 .pricing-card .btn-secondary:hover {
-    background: #2563eb;
+    background: #3367d6;
 }
 
 /* CTA Section */
 .cta {
     padding: 60px 0;
-    background: #3b82f6;
+    background: #4285f4;
     color: white;
     text-align: center;
 }
@@ -245,16 +253,17 @@ header nav ul li .cta-button:hover {
 
 .cta .btn-primary {
     background: white;
-    color: #3b82f6;
+    color: #4285f4;
     padding: 15px 30px;
-    border-radius: 30px;
+    border-radius: 20px;
     text-decoration: none;
     font-weight: 600;
     transition: background 0.3s ease, color 0.3s ease;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
 
 .cta .btn-primary:hover {
-    background: #2563eb;
+    background: #3367d6;
     color: white;
 }
 
